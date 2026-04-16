@@ -1,10 +1,18 @@
+import { NavigationContainer } from '@react-navigation/native';
 import { Stack } from 'expo-router';
 
 export default function Layout() {
   return (
-    <Stack screenOptions={{ headerShown: false }}>
+    <Stack
+      initialRouteName="index"
+      screenOptions={{
+        headerShown: false,
+        headerTitle: '',
+      }}
+    >
       <Stack.Screen name="index" />
-      <Stack.Screen name="home" />
+      <Stack.Screen name="dashboard" />
     </Stack>
   );
 }
+
