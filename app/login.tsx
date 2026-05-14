@@ -12,7 +12,7 @@ export default function Login() {
     }
 
     router.push({
-      pathname: "/dashboard",
+      pathname: "/(tabs)/dashboard",
       params: {
         userName: nome,
         voluntarioId: Math.random().toString(36).substring(2, 9), // Alterado para bater com seu tipo
